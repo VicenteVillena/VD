@@ -3,8 +3,123 @@
     padding-bottom: 3%;
     font-weight: 600;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #FFFFFF;
 }
 
-.brd{
+.brd {
+    border: 1px solid black;
+
+}
+.rd {
+   border-radius: 10px;
+}
+
+.altC {
+    height: 160px;
+    background-color: white;
+}
+
+.xyz {
+    display: flex;
+    align-items: end;
+    background-color: rgba(250, 235, 215, 0);
+}
+
+.abc{
+    background: linear-gradient(#0046FF, #0008FF);
+    height: 420px; border-radius: 10px 10px 0 0; justify-content: space-around;
+}
+.dfic{
+    height: 200px; background-color: white;
+}
+
+.neo{
+    text-shadow: 0px 0px 3px #FFFFFF;
+}
+
+.sp2{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 10%;
+    min-height: 10rem;
+  }
+
+#right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    width: 10%;
+    min-height: 10rem;
+  }
+
+  .colorContainer {
+    width: 50%;
+    margin: 5% auto;
     
+  }
+
+  #left2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 60%;
+    min-height: 10rem;
+  }
+
+  #left3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 25%;
+    min-height: 10rem;
+  }
+
+  #left4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 41%;
+    min-height: 10rem;
+  }
+
+#right2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    width: 50%;
+    min-height: 10rem;
+  }
+
+  .FuenteTitulo{
+    font-weight: 600;
+    font-size: xx-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+
+  #left5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 40%;
+    min-height: 5rem;
+  }
+
+  .defg{
+    background: linear-gradient(#282828, #353535);
+    height: 420px; border-radius: 10px 10px 0 0; justify-content: space-around;
 }
