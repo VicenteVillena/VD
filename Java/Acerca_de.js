@@ -49,29 +49,7 @@ function generarProyectos() {
     $(".alingItem").empty();
 
     for (let i = 0; i < proyectosTemporales.length; i++) {
-        const proyecto = proyectosTemporales[i];
-
-        let itemsCarusel = "";
-
-        if (proyecto.imagenes.length > 0) {
-
-            for (let i = 0; i < proyecto.imagenes.length; i++) {
-                if (i == 0) {
-                    itemsCarusel += '<div class="carousel-item active">' +
-                        '<img src="' + proyecto.imagenes[i] + '" class="d-block w-100" alt="...">' +
-                        '</div>';
-                } else {
-                    itemsCarusel += '<div class="carousel-item">' +
-                        '<img src="' + proyecto.imagenes[i] + '" class="d-block w-100" alt="...">' +
-                        '</div>';
-                }
-            }
-
-        } else {
-            itemsCarusel = '<div class="carousel-item">' +
-                ' <img src="..." class="d-block w-100" alt="...">' +
-                '</div>';
-        }
+        const tarjeta = proyectosTemporales[i];
 
         let item = '<div class="card colorContainer" style="width: 16rem;">' +
         '<img src="' + tarjeta.imagen + '" class="card-img-top" alt="...">' +
@@ -94,7 +72,7 @@ function generarProyectos() {
   function getItems() {
     let result = null;
     $.ajax({
-      url: "http://localhost:777/api/tarjeta/todos",
+      url: "https://apiportafolio-6tqw.onrender.com/api/tarjeta/todos",
       type: "GET",
       async: false,
       cache: false,
@@ -111,7 +89,7 @@ function generarProyectos() {
   function getItem2(val) {
     let result = null;
     $.ajax({
-      url: "http://localhost:777/api/tarjeta/todos/" + val,
+      url: "https://apiportafolio-6tqw.onrender.com/api/tarjeta/todos/" + val,
       type: "GET",
       async: false,
       cache: false,

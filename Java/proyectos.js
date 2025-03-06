@@ -74,7 +74,7 @@ function generarProyectos() {
         let item = '<div class="container mt-3">' +
 
             '<div class="row abc">' +
-            '<p class="neo sp2">'+ proyecto.titulo +'1</p>' +
+            '<p class="neo sp2">'+ proyecto.titulo +'</p>' +
             '<p class="neo">' + proyecto.descripcion + '</p>' +
             '<div class="row xyz">' +
             '<div class="col col-sm-04 brd altC">Contenido 01' +
@@ -142,14 +142,12 @@ function actualizarProy(idItem) {
       let item = {
         "titulo": $("#idTituloProyF").val(),
         "descripcion": $("#idDescProyF").text(),
-        "fecha": $("#idFecProyF").val(),
-        "tecnologias": $("#idTecProyF").val().split(";"),
         "etiquetas": $("#idEtiqProyF").val().split(";"),
         "imagenes": $("#idImgProyF").val().split(";")
       };
   
       $.ajax({
-        url:  "http://localhost:777/api/todos/" + idItem,
+        url:  "https://apiportafolio-6tqw.onrender.com/api/todos/" + idItem,
         type: "PUT",
         async: false,
         cache: false,
@@ -177,13 +175,10 @@ function actualizarProy(idItem) {
   
     $("#idTituloProyF").val(proyecto.titulo);
     $("#idDescProyF").text(proyecto.descripcion);
-    $("#idFecProyF").val(proyecto.fecha);
   
-    let tecnologias = proyecto.tecnologias.join(";");
     let etiquetas = proyecto.etiquetas.join(";");
     let imagenes = proyecto.imagenes.join(";");
   
-    $("#idTecProyF").val(tecnologias);
     $("#idEtiqProyF").val(etiquetas);
     $("#idImgProyF").val(imagenes);
   
@@ -257,7 +252,7 @@ function actualizarProy(idItem) {
   function getItems() {
     let result = null;
     $.ajax({
-      url: "http://localhost:777/api/todos",
+      url: "https://apiportafolio-6tqw.onrender.com/api/todos",
       type: "GET",
       async: false,
       cache: false,
@@ -274,7 +269,7 @@ function actualizarProy(idItem) {
   function getItem2(val) {
     let result = null;
     $.ajax({
-      url: "http://localhost:777/api/todos/" + val,
+      url: "https://apiportafolio-6tqw.onrender.com/api/todos/" + val,
       type: "GET",
       async: false,
       cache: false,
